@@ -14,6 +14,7 @@ class App extends Component {
   }
 
   randomQuoteIndex = () => random(0, this.state.array.length - 1);
+//   or Math.floor(Math.random() * this.state.array.length - 1)
 
   quoteIndex = () => this.setState({index: this.randomQuoteIndex()});
 
